@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.list__item {
+  margin-right: 20px;
+}
+.list__item:first-child {
+  width: 300px;
+}
+
+/*# sourceMappingURL=NavMenu.module.css.map */

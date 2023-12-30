@@ -1,0 +1,16 @@
+.header-top {
+  @extend %centered-content-nowrap;
+
+  &__container {
+    @include fixed-width-flex-container(1180px, wrap, row, space-between)
+  }
+}
+
+
+.header-bottom {
+  @extend %centered-content-nowrap;
+
+  &__container {
+    @include fixed-width-flex-container(1180px, nowrap, row, space-between)
+  }
+}

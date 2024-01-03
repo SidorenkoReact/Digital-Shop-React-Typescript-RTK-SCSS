@@ -1,0 +1,37 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap";
+
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-base;
+  color: $font-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+}
+
+h1 {
+  font-size: 2.5rem; // 40px
+}
+
+h2 {
+  font-size: 2rem; // 32px
+}
+
+h3 {
+  font-size: 1.75rem; // 28px
+}
+
+h4 {
+  font-size: 1.5rem; // 24px
+}
+
+h5 {
+  font-size: 1.25rem; // 20px
+}
+
+h6 {
+  font-size: 1rem; // 16px
+}

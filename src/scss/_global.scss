@@ -1,6 +1,10 @@
+@import "abstracts/variables";
 @import "base/reset";
+@import "base/typography";
+@import "base/base";
 @import "abstracts/placeholders";
 @import "abstracts/mixins";
 @import "layouts/header";
 @import "layouts/main";
 @import "layouts/footer";
+

@@ -1,12 +1,9 @@
-.main-top {
-  @extend %centered-content-nowrap;
+main {
 
-  &__container {
-    @include fixed-width-flex-container(1180px, nowrap, row, space-between)
-  }
 }
 
-.main-mid {
+.main-top, .main-mid, .main-bottom {
+  margin-top: 24px;
   @extend %centered-content-nowrap;
 
   &__container {
@@ -16,7 +13,6 @@
 
 
 .main-bottom {
-  @extend %centered-content-nowrap;
 
   &__container {
     @include fixed-width-flex-container(1180px, nowrap, column, space-between)

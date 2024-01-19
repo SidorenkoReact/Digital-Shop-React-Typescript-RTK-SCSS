@@ -1,8 +1,606 @@
 {
-  "users": [
+  "categories": [
+    { "id": 1, "name": "Смартфоны" },
+    { "id": 2, "name": "Планшеты" },
+    { "id": 3, "name": "Аксессуары для планшетов" },
+    { "id": 4, "name": "Аксессуары для смартфонов" },
+    { "id": 5, "name": "Аксессуары для наушников" },
+    { "id": 6, "name": "Электронные книги и аксессуары" },
+    { "id": 7, "name": "Наушники" },
+    { "id": 8, "name": "Кабели для смартфонов и планшетов" },
+    { "id": 9, "name": "Power bank" },
+    { "id": 10, "name": "Зарядные устройства" },
+    { "id": 11, "name": "Ноутбуки" },
+    { "id": 12, "name": "Компьютеры и моноблоки" },
+    { "id": 13, "name": "Комплектующие для ПК" },
+    { "id": 14, "name": "Жесткие диски и SSD" },
+    { "id": 15, "name": "Мониторы" },
+    { "id": 16, "name": "Сетевые хранилища NAS" },
+    { "id": 17, "name": "Оргтехника" },
+    { "id": 18, "name": "Манипуляторы и устройства ввода" },
+    { "id": 19, "name": "Носители информации" },
+    { "id": 20, "name": "Защита питания" },
+    { "id": 21, "name": "Сетевое оборудование" },
+    { "id": 22, "name": "Колонки для компьютера" },
+    { "id": 23, "name": "Web-камеры" },
+    { "id": 24, "name": "Наушники с микрофоном" },
+    { "id": 25, "name": "Хабы и разветвители" },
+    { "id": 26, "name": "Телевизоры" },
+    { "id": 27, "name": "Проекторы и экраны" },
+    { "id": 28, "name": "LED панели" },
+    { "id": 29, "name": "Аудиотехника" },
+    { "id": 30, "name": "Кронштейны" },
+    { "id": 31, "name": "Кабели для ТВ и аудио-видео" },
+    { "id": 32, "name": "Видеотехника" },
+    { "id": 33, "name": "Спутниковое и цифровое ТВ" },
+    { "id": 34, "name": "Техника Hi-Fi" },
+    { "id": 35, "name": "Приставки PlayStation" },
+    { "id": 36, "name": "Аксессуары для PlayStation" },
+    { "id": 37, "name": "Приставки XBox" },
+    { "id": 38, "name": "Аксессуары для Xbox" },
+    { "id": 39, "name": "Приставки Nintendo" },
+    { "id": 40, "name": "Аксессуары для Nintendo" }
+  ],
+  "products": [
     {
-      "id": 1,
-      "name": "igor"
+      "id": 101,
+      "name": "Apple iPhone 13",
+      "brand": "Apple",
+      "categoryId": 1,
+      "price": 39163,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 102,
+      "name": "Samsung Galaxy S21",
+      "brand": "Samsung",
+      "categoryId": 1,
+      "price": 25699,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 103,
+      "name": "Apple iPad Pro",
+      "brand": "Apple",
+      "categoryId": 2,
+      "price": 46559,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 104,
+      "name": "Samsung Galaxy Tab S7",
+      "brand": "Samsung",
+      "categoryId": 2,
+      "price": 48561,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 105,
+      "name": "JBL Charge 4",
+      "brand": "JBL",
+      "categoryId": 3,
+      "price": 43398,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 106,
+      "name": "Anker PowerCore",
+      "brand": "Anker",
+      "categoryId": 3,
+      "price": 41344,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 107,
+      "name": "Apple AirPods Pro",
+      "brand": "Apple",
+      "categoryId": 4,
+      "price": 35344,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 108,
+      "name": "Samsung Galaxy Buds Plus",
+      "brand": "Samsung",
+      "categoryId": 4,
+      "price": 41342,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 109,
+      "name": "Bose QuietComfort Earbuds",
+      "brand": "Bose",
+      "categoryId": 5,
+      "price": 48915,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 110,
+      "name": "Sony WF-1000XM4",
+      "brand": "Sony",
+      "categoryId": 5,
+      "price": 39015,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 111,
+      "name": "Kindle Paperwhite",
+      "brand": "Amazon",
+      "categoryId": 6,
+      "price": 42399,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 112,
+      "name": "Kobo Clara HD",
+      "brand": "Kobo",
+      "categoryId": 6,
+      "price": 43869,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 113,
+      "name": "Sony WH-1000XM4",
+      "brand": "Sony",
+      "categoryId": 7,
+      "price": 45501,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 114,
+      "name": "Bose Noise Cancelling Headphones 700",
+      "brand": "Bose",
+      "categoryId": 7,
+      "price": 49120,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 115,
+      "name": "Anker PowerLine",
+      "brand": "Anker",
+      "categoryId": 8,
+      "price": 37223,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 116,
+      "name": "Belkin Boost Charge",
+      "brand": "Belkin",
+      "categoryId": 8,
+      "price": 41443,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 117,
+      "name": "Xiaomi Mi Power Bank 3 Pro",
+      "brand": "Xiaomi",
+      "categoryId": 9,
+      "price": 47858,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 118,
+      "name": "Anker PowerCore 20100mAh",
+      "brand": "Anker",
+      "categoryId": 9,
+      "price": 22014,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 119,
+      "name": "Anker Nano Charger",
+      "brand": "Anker",
+      "categoryId": 10,
+      "price": 31545,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 120,
+      "name": "RAVPower PD Pioneer",
+      "brand": "RAVPower",
+      "categoryId": 10,
+      "price": 30196,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 121,
+      "name": "Apple MacBook Pro",
+      "brand": "Apple",
+      "categoryId": 11,
+      "price": 33444,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 122,
+      "name": "Dell XPS 13",
+      "brand": "Dell",
+      "categoryId": 11,
+      "price": 38830,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 123,
+      "name": "HP Envy 32 All-in-One",
+      "brand": "HP",
+      "categoryId": 12,
+      "price": 22861,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 124,
+      "name": "Apple iMac 27-inch",
+      "brand": "Apple",
+      "categoryId": 12,
+      "price": 34581,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 125,
+      "name": "Intel Core i9-11900K",
+      "brand": "Intel",
+      "categoryId": 13,
+      "price": 28557,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 126,
+      "name": "AMD Ryzen 9 5900X",
+      "brand": "AMD",
+      "categoryId": 13,
+      "price": 47677,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 127,
+      "name": "Samsung 970 Evo Plus",
+      "brand": "Samsung",
+      "categoryId": 14,
+      "price": 34838,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 128,
+      "name": "Western Digital Blue 1TB",
+      "brand": "Western Digital",
+      "categoryId": 14,
+      "price": 30657,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 129,
+      "name": "Dell UltraSharp UP3218K",
+      "brand": "Dell",
+      "categoryId": 15,
+      "price": 32176,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 130,
+      "name": "LG UltraGear 27GN950-B",
+      "brand": "LG",
+      "categoryId": 15,
+      "price": 30767,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 131,
+      "name": "Synology DiskStation DS220+",
+      "brand": "Synology",
+      "categoryId": 16,
+      "price": 45565,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 132,
+      "name": "QNAP TS-451",
+      "brand": "QNAP",
+      "categoryId": 16,
+      "price": 43990,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 133,
+      "name": "Canon PIXMA TS8350",
+      "brand": "Canon",
+      "categoryId": 17,
+      "price": 22403,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 134,
+      "name": "HP LaserJet Pro M15w",
+      "brand": "HP",
+      "categoryId": 17,
+      "price": 22385,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 135,
+      "name": "Logitech MX Master 3",
+      "brand": "Logitech",
+      "categoryId": 18,
+      "price": 38897,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 136,
+      "name": "Razer DeathAdder V2",
+      "brand": "Razer",
+      "categoryId": 18,
+      "price": 28573,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 137,
+      "name": "SanDisk Extreme Pro",
+      "brand": "SanDisk",
+      "categoryId": 19,
+      "price": 48748,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 138,
+      "name": "Kingston Canvas Select Plus",
+      "brand": "Kingston",
+      "categoryId": 19,
+      "price": 34646,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 139,
+      "name": "APC Back-UPS ES 700",
+      "brand": "APC",
+      "categoryId": 20,
+      "price": 22603,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 140,
+      "name": "CyberPower CP1500EPFCLCD",
+      "brand": "CyberPower",
+      "categoryId": 20,
+      "price": 36744,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 141,
+      "name": "TP-Link Archer AX6000",
+      "brand": "TP-Link",
+      "categoryId": 21,
+      "price": 33867,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 142,
+      "name": "Netgear Nighthawk AX12",
+      "brand": "Netgear",
+      "categoryId": 21,
+      "price": 28848,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 143,
+      "name": "Logitech Z625",
+      "brand": "Logitech",
+      "categoryId": 22,
+      "price": 21653,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 144,
+      "name": "Creative Pebble Plus",
+      "brand": "Creative",
+      "categoryId": 22,
+      "price": 34710,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 145,
+      "name": "Logitech C920",
+      "brand": "Logitech",
+      "categoryId": 23,
+      "price": 39080,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 146,
+      "name": "Razer Kiyo",
+      "brand": "Razer",
+      "categoryId": 23,
+      "price": 26455,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 147,
+      "name": "SteelSeries Arctis 5",
+      "brand": "SteelSeries",
+      "categoryId": 24,
+      "price": 21045,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 148,
+      "name": "HyperX Cloud II",
+      "brand": "HyperX",
+      "categoryId": 24,
+      "price": 45099,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 149,
+      "name": "Anker 4-Port USB 3.0 Hub",
+      "brand": "Anker",
+      "categoryId": 25,
+      "price": 32961,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 150,
+      "name": "TP-Link UH700",
+      "brand": "TP-Link",
+      "categoryId": 25,
+      "price": 29353,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 151,
+      "name": "Samsung QLED TV",
+      "brand": "Samsung",
+      "categoryId": 26,
+      "price": 39582,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 152,
+      "name": "LG OLED TV",
+      "brand": "LG",
+      "categoryId": 26,
+      "price": 37859,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 153,
+      "name": "Epson Home Cinema 2150",
+      "brand": "Epson",
+      "categoryId": 27,
+      "price": 24855,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 154,
+      "name": "BenQ TK850",
+      "brand": "BenQ",
+      "categoryId": 27,
+      "price": 38433,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 155,
+      "name": "Philips Hue Play Light Bar",
+      "brand": "Philips",
+      "categoryId": 28,
+      "price": 22015,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 156,
+      "name": "Govee LED Strip Lights",
+      "brand": "Govee",
+      "categoryId": 28,
+      "price": 20959,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 157,
+      "name": "Sonos Move",
+      "brand": "Sonos",
+      "categoryId": 29,
+      "price": 29071,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 158,
+      "name": "Bose SoundLink Revolve+",
+      "brand": "Bose",
+      "categoryId": 29,
+      "price": 40864,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 159,
+      "name": "Vogel's TV Wall Mount",
+      "brand": "Vogel's",
+      "categoryId": 30,
+      "price": 36852,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 160,
+      "name": "Sanus Advanced Tilt Premium Wall Mount",
+      "brand": "Sanus",
+      "categoryId": 30,
+      "price": 30154,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 161,
+      "name": "AmazonBasics High-Speed HDMI Cable",
+      "brand": "AmazonBasics",
+      "categoryId": 31,
+      "price": 20428,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 162,
+      "name": "Belkin Ultra HD High Speed HDMI Cable",
+      "brand": "Belkin",
+      "categoryId": 31,
+      "price": 41186,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 163,
+      "name": "Panasonic 4K Ultra HD Blu-ray Player",
+      "brand": "Panasonic",
+      "categoryId": 32,
+      "price": 37987,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 165,
+      "name": "Dish Network Hopper 3",
+      "brand": "Dish Network",
+      "categoryId": 33,
+      "price": 37680,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 166,
+      "name": "DIRECTV Genie HD DVR",
+      "brand": "DIRECTV",
+      "categoryId": 33,
+      "price": 47622,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 167,
+      "name": "Denon AVR-X3700H",
+      "brand": "Denon",
+      "categoryId": 34,
+      "price": 38866,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 168,
+      "name": "Yamaha Aventage RX-A2A",
+      "brand": "Yamaha",
+      "categoryId": 34,
+      "price": 44063,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 169,
+      "name": "Sony PlayStation 5",
+      "brand": "Sony",
+      "categoryId": 35,
+      "price": 45244,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 170,
+      "name": "Microsoft Xbox Series X",
+      "brand": "Microsoft",
+      "categoryId": 37,
+      "price": 31348,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
+    },
+    {
+      "id": 171,
+      "name": "Nintendo Switch",
+      "brand": "Nintendo",
+      "categoryId": 39,
+      "price": 40171,
+      "image": "https://c.dns-shop.ru/thumb/st1/fit/320/250/81e4672eaff4a1f03d632d5c6660b5d3/dcec0b39aaf0a2ebd688101c286e683381f433977585d251d36d2bc2079ff2fa.jpg"
     }
   ]
 }

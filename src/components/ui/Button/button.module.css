@@ -1,0 +1,51 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  transition: all 1s ease;
+  background-color: var(--background-color);
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 50px;
+}
+
+.name {
+  position: absolute;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transform: scale(0);
+}
+
+.content:hover .image {
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+.content:hover .name {
+  transform: scale(1);
+  transition: all 1s ease;
+}
+
+.content:hover:nth-child(1) {
+  width: 200px;
+}
+
+.content:hover:nth-child(2) {
+  width: 200px;
+}
+
+.content:hover:nth-child(3) {
+  width: 200px;
+}
+
+.content:hover:nth-child(4) {
+  width: 200px;
+}
+
+/*# sourceMappingURL=button.module.css.map */

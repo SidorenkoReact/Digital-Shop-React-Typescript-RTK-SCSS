@@ -1,15 +1,16 @@
-import React from "react";
-import {MainTop} from "./MainTop";
-import {MainMid} from "./MainMid";
-import {MainBottom} from "./MainBottom";
+import React, {HTMLAttributes} from "react";
+interface IMainProps extends HTMLAttributes<HTMLElement> {
+    children: React.ReactNode
+}
 
+const Main: React.FC<IMainProps> = ({className, children, ...rest}) => {
+    const mainClassName = `main ${className || ''}`
 
-const Main = () => {
     return (
-        <main>
-            <MainTop/>
-            <MainMid/>
-            <MainBottom/>
+        <main {...rest} className={mainClassName}>
+            <div  className="main__container">
+                {children}
+            </div>
         </main>
     )
 }

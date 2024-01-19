@@ -1,8 +1,14 @@
 .footer {
+  background-color: var(--surface-color);
   margin-top: 24px;
+
   @extend %centered-content-nowrap;
 
   &__container {
-    @include fixed-width-flex-container(1180px, nowrap, row, space-evenly)
+    @include fixed-width-flex-container(1180px, nowrap, row, space-evenly, stretch)
+  }
+
+  .test {
+    font-size: 1.5rem;
   }
 }

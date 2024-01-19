@@ -1,15 +1,15 @@
 @import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap";
 
-body {
-  font-family: $font-family-primary;
-  font-size: $font-size-base;
-  font-weight: $font-weight-regular;
-  line-height: $line-height-base;
-  color: $font-color;
+html {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
+  color: var(--font-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $font-weight-bold;
+  font-weight: var(--font-weight-bold);
 }
 
 h1 {

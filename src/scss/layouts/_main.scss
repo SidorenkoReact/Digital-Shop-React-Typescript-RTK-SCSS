@@ -1,13 +1,22 @@
-main {
+.main {
+  background-color: var(--background-color);
+  padding-top: 24px;
+
+  @extend %centered-content-nowrap;
+
+  &__container {
+    @include fixed-width-flex-container(1180px, nowrap, column, space-between, stretch);
+  }
 
 }
 
+//!!!!!!!!!!!!!!!!!!!!!!!!! переделать в контент home страницы когда будем делать навигацию
 .main-top, .main-mid, .main-bottom {
   margin-top: 24px;
   @extend %centered-content-nowrap;
 
   &__container {
-    @include fixed-width-flex-container(1180px, nowrap, row, space-between)
+    @include fixed-width-flex-container(1180px, nowrap, row, space-between, stretch)
   }
 }
 
@@ -15,6 +24,7 @@ main {
 .main-bottom {
 
   &__container {
-    @include fixed-width-flex-container(1180px, nowrap, column, space-between)
+    @include fixed-width-flex-container(1180px, nowrap, column, space-between, stretch)
   }
 }
+//!!!!!!!!!!!!!!!!!!!!!!!!!

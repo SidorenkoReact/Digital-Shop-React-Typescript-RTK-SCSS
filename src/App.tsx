@@ -1,15 +1,19 @@
 import React from 'react';
 import './App.css';
-import {Header} from "./components/layouts/Header/Header";
-import {Main} from "./components/layouts/Main/Main";
-import {Footer} from "./components/layouts/Footer/Footer";
+import {BrowserRouter} from "react-router-dom";
+import {AppRouter} from "./components/layouts/AppRouter";
+import {ProductFilterProvider} from "./contexts/ProductFilterContext";
+
+
 
 function App() {
     return (
         <div className="App">
-            <Header/>
-            <Main/>
-            <Footer/>
+            <ProductFilterProvider>
+               <BrowserRouter>
+                    <AppRouter/>
+               </BrowserRouter>
+            </ProductFilterProvider>
         </div>
     );
 }

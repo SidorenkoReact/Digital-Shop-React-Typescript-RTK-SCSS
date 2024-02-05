@@ -1,0 +1,64 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: calc(100% - 0.8rem);
+  height: 20px;
+  margin: 0 0.4rem;
+}
+.content .control_wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+}
+.content .control_wrapper .rail {
+  display: flex;
+  position: absolute;
+  background-color: var(--secondary-color-200);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.4rem;
+}
+.content .control_wrapper .progress {
+  background-color: var(--primary-color-900);
+  position: absolute;
+  height: 100%;
+  border-radius: 0.4rem;
+  left: 10%;
+  right: 30%;
+  top: 0;
+}
+.content input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  background-color: transparent;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.content input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: var(--primary-color-900);
+  pointer-events: auto;
+}
+.content input::-webkit-slider-thumb:hover {
+  background-color: #e37705;
+}
+
+/*# sourceMappingURL=range_slider.module.css.map */

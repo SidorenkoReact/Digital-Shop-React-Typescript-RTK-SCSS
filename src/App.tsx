@@ -3,17 +3,21 @@ import './App.css';
 import {BrowserRouter} from "react-router-dom";
 import {AppRouter} from "./components/layouts/AppRouter";
 import {ProductFilterProvider} from "./contexts/ProductFilterContext";
+import {Provider} from "react-redux";
+import {store} from "./store/store";
 
 
 
 function App() {
     return (
         <div className="App">
-            <ProductFilterProvider>
-               <BrowserRouter>
-                    <AppRouter/>
-               </BrowserRouter>
-            </ProductFilterProvider>
+            <Provider store={store}>
+                <ProductFilterProvider>
+                   <BrowserRouter>
+                        <AppRouter/>
+                   </BrowserRouter>
+                </ProductFilterProvider>
+            </Provider>
         </div>
     );
 }

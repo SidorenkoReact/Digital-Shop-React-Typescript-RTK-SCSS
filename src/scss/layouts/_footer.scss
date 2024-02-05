@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--surface-color);
-  margin-top: 24px;
+  margin-top: 1.5rem;
 
   @extend %centered-content-nowrap;
 
@@ -8,7 +8,5 @@
     @include fixed-width-flex-container(1180px, nowrap, row, space-evenly, stretch)
   }
 
-  .test {
-    font-size: 1.5rem;
-  }
+
 }

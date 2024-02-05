@@ -2,8 +2,9 @@
   display: flex;
   width: 885px;
   height: 220px;
-  border: 1px solid var(--border-color);
   background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   box-sizing: content-box;
   padding: 24px 16px;
 }

@@ -1,6 +1,6 @@
 import React, {useContext, useState} from "react";
 import {ButtonsMenu} from "./content/ButtonsMenu/ButtonsMenu";
-import {Input} from "../../ui/Input/Input";
+import {Input} from "../../ui/Inputs/Input/Input";
 import {ProductFilterContext} from "../../../contexts/ProductFilterContext";
 
 
@@ -15,7 +15,7 @@ const HeaderBottom = () => {
     return (
         <div className="header-bottom">
             <div className="header-bottom__container">
-
+                {/*сделать large input!!!!!!!!*/}
                 <button style={{height: 40, width: 200}}>Каталог</button>
                 <Input
                     onChange={event => setFilter(prev => ({...prev, query: event.target.value}))}

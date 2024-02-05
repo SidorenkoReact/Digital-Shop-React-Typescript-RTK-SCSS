@@ -8,8 +8,8 @@ interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
 const Input: React.FC<IInputProps> = ({...rest}) => {
     return (
         <input
-            {...rest}
             className={styles.content}
+            {...rest}
         />
     )
 }

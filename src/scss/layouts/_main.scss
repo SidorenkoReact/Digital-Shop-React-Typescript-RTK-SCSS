@@ -1,6 +1,6 @@
 .main {
   background-color: var(--background-color);
-  padding-top: 24px;
+  padding-top: 1.5rem;
 
   @extend %centered-content-nowrap;
 
@@ -12,7 +12,7 @@
 
 //!!!!!!!!!!!!!!!!!!!!!!!!! переделать в контент home страницы когда будем делать навигацию
 .main-top, .main-mid, .main-bottom {
-  margin-top: 24px;
+  margin-top: 1.5rem;
   @extend %centered-content-nowrap;
 
   &__container {

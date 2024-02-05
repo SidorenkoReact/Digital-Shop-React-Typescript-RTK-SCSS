@@ -1,5 +1,5 @@
-import {Products} from "../../layouts/Main/content/Products/Products";
-import {BreadCrumbList} from "../../layouts/Main/content/BreadCrumbList/BreadCrumbList";
+import {Products} from "../../layouts/Main/content/Catalog/Products/Products";
+import {BreadCrumbList} from "../../layouts/Main/content/Catalog/BreadCrumbList/BreadCrumbList";
 
 
 const CatalogPage = () => {

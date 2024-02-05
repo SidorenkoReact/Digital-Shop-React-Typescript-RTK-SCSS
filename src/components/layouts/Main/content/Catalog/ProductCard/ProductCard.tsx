@@ -1,7 +1,7 @@
 import styles from "./productCard.module.scss"
 import React from "react";
-import {IProduct} from "../../../../../types/types";
-import {Checkbox} from "../../../../ui/Checkbox/Checkbox";
+import {IProduct} from "../../../../../../types/types";
+import {Checkbox} from "../../../../../ui/Checkbox/Checkbox";
 
 interface IProductProps {
     product: IProduct

@@ -1,7 +1,7 @@
-import {Select} from "../../../../ui/Select/Select";
+import {Select} from "../../../../../ui/Select/Select";
 import React from "react";
 import styles from "./productSortFilter.module.scss"
-import {IFilterTypes} from "../../../../../types/types";
+import {IFilterTypes} from "../../../../../../types/types";
 
 interface IProductSortFilterProps {
     limit: number;

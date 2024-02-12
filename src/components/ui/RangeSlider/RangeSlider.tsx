@@ -8,31 +8,12 @@ interface IRangeSliderProps {
     initialRange: TSliderValues;
     step: number;
     sliderValues: TSliderValues;
-    setSliderValue: React.Dispatch<React.SetStateAction<TSliderValues>>
-    setMinValue: React.Dispatch<React.SetStateAction<number>>
-    setMaxValue: React.Dispatch<React.SetStateAction<number>>
+    onChangeSlider: (value: number, isLeftSlider?: boolean) => void;
 }
 
-const RangeSlider: React.FC<IRangeSliderProps> = ({sliderValues, setSliderValue, initialRange, step, setMinValue, setMaxValue}) => {
-
+const RangeSlider: React.FC<IRangeSliderProps> = ({sliderValues, initialRange, step, onChangeSlider}) => {
     const minPos = Math.round((sliderValues.min - initialRange.min) / (initialRange.max - initialRange.min) * 100)
     const maxPos = Math.round((sliderValues.max - initialRange.min) / (initialRange.max - initialRange.min) * 100)
-
-    const onChangeMinValueInput = (value: number) => {
-        if (value < sliderValues.max) {
-            const currentRange = {...sliderValues, min: value}
-            setSliderValue(currentRange)
-            setMinValue(currentRange.min)
-        }
-    }
-
-    const onChangeMaxValueInput = (value: number) => {
-        if (value > sliderValues.min) {
-            const currentRange = {...sliderValues, max: value}
-            setSliderValue(currentRange)
-            setMaxValue(currentRange.max)
-        }
-    }
 
     return (
         <div className={styles.content}>
@@ -47,7 +28,7 @@ const RangeSlider: React.FC<IRangeSliderProps> = ({sliderValues, setSliderValue,
             </div>
 
             <input
-                onChange={event => onChangeMinValueInput(Number(event.currentTarget.value))}
+                onChange={event => onChangeSlider(Number(event.currentTarget.value), true)}
                 value={sliderValues.min}
                 min={initialRange.min}
                 max={initialRange.max}
@@ -55,16 +36,13 @@ const RangeSlider: React.FC<IRangeSliderProps> = ({sliderValues, setSliderValue,
                 type="range"
             />
             <input
-                onChange={event => onChangeMaxValueInput(Number(event.currentTarget.value))}
+                onChange={event => onChangeSlider(Number(event.currentTarget.value), false)}
                 value={sliderValues.max}
                 min={initialRange.min}
                 max={initialRange.max}
                 step={step}
                 type="range"
             />
-            <span style={{zIndex: 1, pointerEvents: "none"}}>
-                {sliderValues.min} : {sliderValues.max}
-            </span>
 
         </div>
     )

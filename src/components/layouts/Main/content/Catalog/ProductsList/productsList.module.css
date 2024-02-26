@@ -1,9 +1,9 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  padding-left: 22px;
+  gap: var(--spacing-sm);
+  width: calc(100% - 278px - 0.8rem);
+  padding-left: 0.8rem;
 }
 
 /*# sourceMappingURL=productsList.module.css.map */

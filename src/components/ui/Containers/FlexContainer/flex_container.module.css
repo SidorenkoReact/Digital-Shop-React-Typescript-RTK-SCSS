@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.spacing_xs {
+  margin: var(--spacing-xs) 0;
+}
+
+.spacing_sm {
+  margin: var(--spacing-sm) 0;
+}
+
+.spacing_sm-md {
+  margin: var(--spacing-sm-md) 0;
+}
+
+.spacing_md {
+  margin: var(--spacing-md) 0;
+}
+
+.spacing_lg {
+  margin: var(--spacing-lg) 0;
+}
+
+.spacing_xl {
+  margin: var(--spacing-xl) 0;
+}
+
+/*# sourceMappingURL=flex_container.module.css.map */

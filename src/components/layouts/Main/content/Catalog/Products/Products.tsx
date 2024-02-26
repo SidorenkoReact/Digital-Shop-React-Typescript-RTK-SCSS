@@ -28,17 +28,17 @@ const Products = () => {
     return (
         <section className={styles.content}>
             <AdvancedFilter/>
-            {/*<ProductsList*/}
-            {/*    limit={limit}*/}
-            {/*    filter={filter}*/}
-            {/*    setLimit={setLimit}*/}
-            {/*    setFilter={setFilter}*/}
-            {/*    products={filteredProducts}*/}
-            {/*    isLoading={isLoading}*/}
-            {/*    error={error}*/}
-            {/*    totalCount={totalCount}*/}
-            {/*    setPage={setPage}*/}
-            {/*/>*/}
+            <ProductsList
+                limit={limit}
+                filter={filter}
+                setLimit={setLimit}
+                setFilter={setFilter}
+                products={filteredProducts}
+                isLoading={isLoading}
+                error={error}
+                totalCount={totalCount}
+                setPage={setPage}
+            />
 
         </section>
     )

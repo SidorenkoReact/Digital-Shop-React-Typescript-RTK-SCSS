@@ -2,97 +2,60 @@ import styles from "./advancedFilter.module.scss"
 import {RangeSlider, TSliderValues} from "../../../../../ui/RangeSlider/RangeSlider";
 import React, {useState} from "react";
 import {NumberInput} from "../../../../../ui/Inputs/NumberInput/NumberInput";
+import {RangeSliderFilter} from "../../../../../ui/RangeSliderFilter/RangeSliderFilter";
+import {SearchInput} from "../../../../../ui/Inputs/SearchInput/SearchInput";
+import {Accordion} from "../../../../../ui/Accordion/Accordion";
+import {CheckboxList} from "../../../../../ui/CheckboxList/CheckboxList";
 
 
 const AdvancedFilter = () => {
+    const title = "Цена"
     const [priceRange, setPriceRange] = useState<TSliderValues>({min: 0, max: 1800})
     const [minValueNumberInput, setMinValueNumberInput] = useState(priceRange.min)
     const [maxValueNumberInput, setMaxValueNumberInput] = useState(priceRange.max)
     const [sliderValues, setSliderValue] = useState<TSliderValues>(priceRange)
     const sliderStep = 5
 
-    const onKeyDownNumberInput = (event: React.KeyboardEvent<HTMLInputElement>, isMinInput: boolean) => {
-        let currentValue = Number(event.currentTarget.value)
+    const brandsList = [{id: 0, name: "Apple", checked: false}, {id: 1, name: "Samsung", checked: false}, {id: 2, name: "JBL", checked: false}]
+    const ratingsList = [{id: 0, name: "4,5 и выше", checked: false}, {id: 1, name: "4 и выше", checked: false}, {id: 2, name: "3,5 выше", checked: false}, {id: 2, name: "3 выше", checked: false}]
+    const colorsList = [{id: 0, name: "белый", checked: false}, {id: 1, name: "голубой", checked: false}, {id: 2, name: "зеленый", checked: false}, {id: 2, name: "серый", checked: false}, {id: 3, name: "синий", checked: false}, {id: 4, name: "черный", checked: false}]
 
-        currentValue = currentValue <= priceRange.min ? priceRange.min : currentValue
-        currentValue = currentValue >= priceRange.max ? priceRange.max : currentValue
-
-        if (isMinInput) {
-            if (currentValue < maxValueNumberInput) {
-                setMinValueNumberInput(currentValue)
-                setSliderValue(prev => ({...prev, min: currentValue}))
-
-            } else {
-                setMinValueNumberInput(maxValueNumberInput)
-                setSliderValue(prev => ({...prev, min: maxValueNumberInput}))
-            }
-        }
-
-        if (!isMinInput) {
-            if (currentValue > minValueNumberInput) {
-                setMaxValueNumberInput(currentValue)
-                setSliderValue(prev => ({...prev, max: currentValue}))
-
-            } else {
-                setMaxValueNumberInput(minValueNumberInput)
-                setSliderValue(prev => ({...prev, max: minValueNumberInput}))
-            }
-        }
-
-        event.currentTarget.blur()
-    }
-
-    const onChangeSlider = (value: number, isLeftSlider?: boolean) => {
-        if (isLeftSlider) {
-            if (value + sliderStep < sliderValues.max) {
-                const currentRange = {...sliderValues, min: value}
-                setSliderValue(currentRange)
-                setMinValueNumberInput(currentRange.min)
-
-            } else {
-                const currentRange = {...sliderValues, max: value}
-                setSliderValue(currentRange)
-                setMaxValueNumberInput(currentRange.max)
-            }
-        }
-
-        if (!isLeftSlider) {
-            if (value - sliderStep > sliderValues.min ) {
-                const currentRange = {...sliderValues, max: value}
-                setSliderValue(currentRange)
-                setMaxValueNumberInput(currentRange.max)
-
-            } else {
-                const currentRange = {...sliderValues, min: value}
-                setSliderValue(currentRange)
-                setMinValueNumberInput(currentRange.min)
-            }
-        }
-    }
 
     return (
         <div className={styles.content}>
-            <span>Цена:</span>
-
-            <div className={styles.range_input_wrapper}>
-                <NumberInput
-                    currentValue={minValueNumberInput}
-                    onKeyDownInput={event => onKeyDownNumberInput(event, true)}
-                />
-                <NumberInput
-                    currentValue={maxValueNumberInput}
-                    onKeyDownInput={event => onKeyDownNumberInput(event, false)}
-                />
-
-            </div>
-
-            <RangeSlider
-                initialRange={priceRange}
-                step={sliderStep}
+            <SearchInput/>
+            <RangeSliderFilter
+                title={"Цена"}
+                range={priceRange}
+                sliderStep={sliderStep}
+                minValueNumberInput={minValueNumberInput}
+                setMinValueNumberInput={setMinValueNumberInput}
+                maxValueNumberInput={maxValueNumberInput}
+                setMaxValueNumberInput={setMaxValueNumberInput}
                 sliderValues={sliderValues}
-                onChangeSlider={onChangeSlider}
+                setSliderValue={setSliderValue}
             />
-
+            <Accordion items={[
+                {
+                    title: "Бренд",
+                    content: <CheckboxList
+                                items={brandsList}
+                                firstItem={{id: 0, name:"Все производители", checked: false}}
+                                hasSearchInput={true}
+                            />,
+                    isCollapsed: true
+                },
+                {
+                    title: "Рейтинг",
+                    content: <CheckboxList items={ratingsList}/>,
+                    isCollapsed: true
+                },
+                {
+                    title: "Цвет",
+                    content: <CheckboxList items={colorsList}/>,
+                    isCollapsed: true
+                }
+            ]}/>
         </div>
     )
 }

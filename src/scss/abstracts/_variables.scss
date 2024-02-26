@@ -35,10 +35,23 @@ $surface-color: lighten($secondary-color, 80%);
 
   --border-color: var(--secondary-color-300);
   --border: 0.063rem solid var(--border-color);
-  --border-radius: 8px;
 
+  --border-radius-xs: .25rem;
+  --border-radius-sm: .3rem;
+
+
+  //--gap: .5rem;
+
+  --spacing-xs: .25rem;
+  --spacing-sm: .5rem;
+  --spacing-sm-md: .7rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
 
   --box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);
+
+  --transition: all .25s;
 
   --font-color: var(secondary-color-900);
 
@@ -52,7 +65,7 @@ $surface-color: lighten($secondary-color, 80%);
   --font-weight-bold: 700;
 
 
-  --font-size-400: .8rem;
+  --font-size-400: .9rem;
   --font-size-500: 1rem;
   --font-size-600: 1.5rem;
 }

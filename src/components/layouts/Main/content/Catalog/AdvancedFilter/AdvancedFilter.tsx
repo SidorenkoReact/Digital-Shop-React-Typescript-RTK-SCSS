@@ -6,10 +6,12 @@ import {RangeSliderFilter} from "../../../../../ui/RangeSliderFilter/RangeSlider
 import {SearchInput} from "../../../../../ui/Inputs/SearchInput/SearchInput";
 import {Accordion} from "../../../../../ui/Accordion/Accordion";
 import {CheckboxList} from "../../../../../ui/CheckboxList/CheckboxList";
+import {BasicButton} from "../../../../../ui/BasicButton/BasicButton";
+import {FlexContainer} from "../../../../../ui/Containers/FlexContainer/FlexContainer";
+import {Icon} from "../../../../../ui/Icon/Icon";
 
 
 const AdvancedFilter = () => {
-    const title = "Цена"
     const [priceRange, setPriceRange] = useState<TSliderValues>({min: 0, max: 1800})
     const [minValueNumberInput, setMinValueNumberInput] = useState(priceRange.min)
     const [maxValueNumberInput, setMaxValueNumberInput] = useState(priceRange.max)
@@ -17,8 +19,8 @@ const AdvancedFilter = () => {
     const sliderStep = 5
 
     const brandsList = [{id: 0, name: "Apple", checked: false}, {id: 1, name: "Samsung", checked: false}, {id: 2, name: "JBL", checked: false}]
-    const ratingsList = [{id: 0, name: "4,5 и выше", checked: false}, {id: 1, name: "4 и выше", checked: false}, {id: 2, name: "3,5 выше", checked: false}, {id: 2, name: "3 выше", checked: false}]
-    const colorsList = [{id: 0, name: "белый", checked: false}, {id: 1, name: "голубой", checked: false}, {id: 2, name: "зеленый", checked: false}, {id: 2, name: "серый", checked: false}, {id: 3, name: "синий", checked: false}, {id: 4, name: "черный", checked: false}]
+    const ratingsList = [{id: 0, name: "4,5 и выше", checked: false}, {id: 1, name: "4 и выше", checked: false}, {id: 2, name: "3,5 выше", checked: false}, {id: 3, name: "3 выше", checked: false}]
+    const colorsList = [{id: 0, name: "белый", checked: false}, {id: 1, name: "голубой", checked: false}, {id: 2, name: "зеленый", checked: false}, {id: 3, name: "серый", checked: false}, {id: 4, name: "синий", checked: false}, {id: 5, name: "черный", checked: false}]
 
 
     return (
@@ -35,6 +37,7 @@ const AdvancedFilter = () => {
                 sliderValues={sliderValues}
                 setSliderValue={setSliderValue}
             />
+            <FlexContainer>
             <Accordion items={[
                 {
                     title: "Бренд",
@@ -56,6 +59,12 @@ const AdvancedFilter = () => {
                     isCollapsed: true
                 }
             ]}/>
+                <FlexContainer width="70%" spacing="md">
+                    <BasicButton variant="contained" color="primary">Применить</BasicButton>
+                    <BasicButton variant="outlined" color="secondary">Сбросить</BasicButton>
+                </FlexContainer>
+            </FlexContainer>
+
         </div>
     )
 }

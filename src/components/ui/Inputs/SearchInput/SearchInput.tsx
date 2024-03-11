@@ -4,7 +4,7 @@ import React, {MouseEventHandler, useRef, useState} from "react";
 
 
 interface ISearchInputProps {
-    variant?: "transparent" | "grey" | undefined;
+    variant?: "transparent" | "primary" | "secondary" | undefined;
 }
 
 const SearchInput: React.FC<ISearchInputProps> = ({variant}) => {

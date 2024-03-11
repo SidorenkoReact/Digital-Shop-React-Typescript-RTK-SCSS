@@ -30,7 +30,7 @@
     }
 
     .progress {
-      background-color: var(--primary-color-900);
+      background-color: var(--primary-color-800);
       position: absolute;
       height: 100%;
       border-radius: .4rem;
@@ -62,11 +62,11 @@
       width: 15px;
       height: 15px;
       border-radius: 10px;
-      background-color: var(--primary-color-900);
+      background-color: var(--primary-color-800);
       pointer-events: auto;
 
       &:hover {
-        background-color: darken(rgb(250, 132, 7), 5);
+        background-color: darken(rgb(250, 132, 7), 2);
       }
     }
   }

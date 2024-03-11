@@ -1,0 +1,26 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: var(--border);
+  border-radius: var(--border-radius-sm);
+  width: fit-content;
+  height: fit-content;
+}
+.content .star_icon {
+  fill: transparent;
+  stroke: var(--secondary-color-200);
+  stroke-width: 0.12rem;
+  max-width: 1rem;
+  max-height: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.content .checked {
+  fill: var(--primary-color-800);
+  stroke: var(--primary-color-800);
+}
+
+/*# sourceMappingURL=rating.module.css.map */

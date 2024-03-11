@@ -27,7 +27,7 @@
   border-radius: 0.4rem;
 }
 .content .control_wrapper .progress {
-  background-color: var(--primary-color-900);
+  background-color: var(--primary-color-800);
   position: absolute;
   height: 100%;
   border-radius: 0.4rem;
@@ -54,11 +54,11 @@
   width: 15px;
   height: 15px;
   border-radius: 10px;
-  background-color: var(--primary-color-900);
+  background-color: var(--primary-color-800);
   pointer-events: auto;
 }
 .content input::-webkit-slider-thumb:hover {
-  background-color: #e37705;
+  background-color: #f27f05;
 }
 
 /*# sourceMappingURL=range_slider.module.css.map */

@@ -1,0 +1,49 @@
+.content {
+  width: 100%;
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-sm) 0;
+  transition: var(--transition);
+}
+
+.variant_text {
+  background-color: transparent;
+}
+.variant_text_color_primary:hover {
+  background-color: var(--primary-color-700);
+}
+.variant_text_color_secondary:hover {
+  background: var(--secondary-color-150);
+}
+
+.variant_contained_color_primary {
+  background: var(--primary-color-800);
+}
+.variant_contained_color_primary:hover {
+  background: var(--primary-color-850);
+}
+.variant_contained_color_secondary {
+  background: var(--secondary-color-300);
+}
+.variant_contained_color_secondary:hover {
+  background: var(--secondary-color-250);
+}
+
+.variant_outlined {
+  background-color: transparent;
+}
+.variant_outlined_color_primary {
+  border: 0.05rem solid var(--secondary-color-200);
+}
+.variant_outlined_color_primary:hover {
+  border: 0.05rem solid var(--secondary-color-100);
+  background: var(--primary-color-700);
+}
+.variant_outlined_color_secondary {
+  border: 0.05rem solid var(--secondary-color-200);
+}
+.variant_outlined_color_secondary:hover {
+  border: 0.05rem solid transparent;
+  background: var(--secondary-color-150);
+}
+
+/*# sourceMappingURL=basic_button.module.css.map */

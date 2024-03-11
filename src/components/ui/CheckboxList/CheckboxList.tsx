@@ -24,7 +24,7 @@ const CheckboxList: React.FC<ICheckboxListProps> = ({firstItem, items, hasSearch
         <div className={styles.content}>
             {hasSearchInput &&
                 <FlexContainer width="90%" spacing="sm">
-                    <SearchInput variant={"grey"}/>
+                    <SearchInput variant={"secondary"}/>
                 </FlexContainer>
             }
             {firstItem &&
@@ -39,6 +39,7 @@ const CheckboxList: React.FC<ICheckboxListProps> = ({firstItem, items, hasSearch
 
                 {items.map(item =>
                     <Checkbox
+                        onChange={() => {}}
                         checked={allChecked && allChecked}
                         label={item.name}
                         key={item.id}

@@ -1,12 +1,12 @@
 import React, {HTMLAttributes} from "react";
-import styles from "./button.module.scss"
+import styles from "./icon_button.module.scss"
 
 
 interface IButtonProps extends HTMLAttributes<HTMLButtonElement> {
     image?: string
 }
 
-const Button: React.FC<IButtonProps> = ({image, children, ...rest}) => {
+const IconButton: React.FC<IButtonProps> = ({image, children, ...rest}) => {
 
     if (image)
         return (
@@ -19,7 +19,6 @@ const Button: React.FC<IButtonProps> = ({image, children, ...rest}) => {
             </button>
         )
 
-
     return (
         <button {...rest} className={styles.content}>
             {children}
@@ -28,4 +27,4 @@ const Button: React.FC<IButtonProps> = ({image, children, ...rest}) => {
 }
 
 
-export {Button}
+export {IconButton}

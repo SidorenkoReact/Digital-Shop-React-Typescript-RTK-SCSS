@@ -1,26 +1,27 @@
 import React from "react";
-import { Button } from "../../../../ui/Button/Button";
+
 import compareImage from "../../../../../assets/image/compare.png"
 import favoritesImage from "../../../../../assets/image/favorites.png"
 import cartImage from "../../../../../assets/image/cart.png"
 import profileImage from "../../../../../assets/image/profile.png"
 import styles from "./buttonsMenu.module.scss"
+import { IconButton } from "../../../../ui/IconButton/IconButton";
 
 const ButtonsMenu = () => {
     return (
         <nav className={styles.content} style={{}}>
-            <Button image={compareImage}>
+            <IconButton image={compareImage}>
                 Сравнить
-            </Button>
-            <Button image={favoritesImage}>
+            </IconButton>
+            <IconButton image={favoritesImage}>
                 Избранное
-            </Button>
-            <Button image={cartImage}>
+            </IconButton>
+            <IconButton image={cartImage}>
                 Корзина
-            </Button>
-            <Button image={profileImage}>
+            </IconButton>
+            <IconButton image={profileImage}>
                 Кабинет
-            </Button>
+            </IconButton>
         </nav>
     )
 }
